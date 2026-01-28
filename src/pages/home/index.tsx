@@ -14,6 +14,32 @@ export function Home() {
                     Buscar
                 </button>
             </section>
+
+            <h1 className="font-bold text-center mt-6 text-2xl mb-4">
+                Carros novos e usados em todo o Brasil
+            </h1>
+            <main className="grid grid-cols-1 gap-6 md:grid-cols-2 gird-cols-3">
+                <section className="w-full bg-white rounded-lg">
+                    <img 
+                        className="w-full rounded-lg mb-2 max-h-72 hover:scale-105 transition-all"
+                        src="https://www.webmotors.com.br/imagens/prod/loja-oficial/images/caoa-cherry/cores/black.png" 
+                        alt="Carro" 
+                    />
+                    <p className="font-bold mt-1 mb-2 px-2">BWM 320i</p>
+                    <div className="flex flex-col px-2">
+                        <span className="text-zinc-700 mb-6">Ano 2016/2016 | 23.000 km</span>
+                        <strong className="text-black font-medium text-xl">R$ 120.000,00</strong>
+                    </div>
+
+                    <div className="w-full h-px bg-slate-200 my-2"></div>
+
+                    <div className="px-2 pb-2">
+                        <span className="text-black">
+                            Jaru - RO
+                        </span>
+                    </div>
+                </section>
+            </main>
         </Container>    
     )
 }
