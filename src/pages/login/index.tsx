@@ -14,7 +14,12 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export function Login() {
-
+    
+    /* 
+      * Em formsState: {error} foi usada a desestruturação aninhada.
+      * Primeiro extraiu-se formState de useForm. 
+      * Depois extraiu-se errors de formsState
+    */
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
         resolver: zodResolver(schema),
         mode: 'onChange',
